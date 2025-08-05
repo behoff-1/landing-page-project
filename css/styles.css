@@ -1,5 +1,11 @@
 body {
     font-family: sans-serif, "Times New Roman";
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
 }
 a {
     text-decoration: none;
@@ -8,46 +14,77 @@ a {
 ul {
     list-style-type: none;
 }
-
-.container {
-    max-width: 1100px;
-    margin: 0 auto;
-    padding: 0 32px;
+section {
+    width: 100%;
+    padding: 80px 32px;
+    display: flex;
+    justify-content: center;
 }
-
+.section-content {
+    width: 100%;
+    max-width: 1100px;
+    display: flex;
+}
 /* Header content */
 .header {
-    display: flex;
     background: rgb(151, 196, 255);
-    padding: 8px;
+    padding: 16px 32px;
+    display: flex;
+    justify-content: center;
+}
+.header-content {
+    display: flex;
     justify-content: space-between;
     align-items: center;
+    margin: 0 auto;
+    width: 100%;
+    max-width: 1100px;
 }
 
 .nav-links {
     display: flex;
     gap: 16px;
-    background: rgb(250, 157, 250);
-    padding: 0px;
-    margin: 0px;
+    font-weight: bold;
 }
 /* First-section content */
-h1 {
-    font-size: 18px;
-}
 .first {
     background: #ff8985;
-    padding: 50px 16px;
+    padding: 35px 16px;
 }
+/* Left Side */
 .first-content {
-    display: flex;
     gap: 48px;
     align-items: center;
 }
 .first-text {
     display: flex;
+    flex: 1;
     flex-direction: column;
+    justify-content: center;
+    padding-right: 24px;
 }
+.first-text h1 {
+    font-size: 36px;
+    font-weight: 900;
+    margin: 0;
+    padding: 0;
+}
+.first-text p {
+    font-size: 18px;
+    margin-bottom: 16px;
+}
+.signup-button {
+    max-width: 120px;
+    background-color: #3882F6;
+    color: #fff;
+    font-weight: bold;
+    padding: 8px 16px;
+    border: none;
+    border-radius: 6px;
+    cursor: pointer;
+    align-self: flex-start;
+}
+/* Right side */
 .first-image{
     display: flex;
     flex-direction: column;
@@ -60,11 +97,5 @@ h1 {
 .giphy-credit a {
     color: white;
     font-size: 16px;
-    font-weight: bold;
-}
-.signup-button {
-    max-width: 100px;
-    background-color: #3882F6;
-    color: #fff;
     font-weight: bold;
 }
