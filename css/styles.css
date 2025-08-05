@@ -15,6 +15,7 @@ ul {
     padding: 0 32px;
 }
 
+/* Header content */
 .header {
     display: flex;
     background: rgb(151, 196, 255);
@@ -29,4 +30,41 @@ ul {
     background: rgb(250, 157, 250);
     padding: 0px;
     margin: 0px;
+}
+/* First-section content */
+h1 {
+    font-size: 18px;
+}
+.first {
+    background: #ff8985;
+    padding: 50px 16px;
+}
+.first-content {
+    display: flex;
+    gap: 48px;
+    align-items: center;
+}
+.first-text {
+    display: flex;
+    flex-direction: column;
+}
+.first-image{
+    display: flex;
+    flex-direction: column;
+}
+.giphy-credit {
+    align-self: flex-end;
+    margin-top: auto;
+    padding: 4px 8px;
+}
+.giphy-credit a {
+    color: white;
+    font-size: 16px;
+    font-weight: bold;
+}
+.signup-button {
+    max-width: 100px;
+    background-color: #3882F6;
+    color: #fff;
+    font-weight: bold;
 }
