@@ -14,15 +14,10 @@ a {
 ul {
     list-style-type: none;
 }
-section {
-    width: 100%;
-    padding: 80px 32px;
-    display: flex;
-    justify-content: center;
-}
 .section-content {
     width: 100%;
-    max-width: 1100px;
+    margin: 0 auto;
+    padding: 80px 32px;
     display: flex;
 }
 /* Header content */
@@ -38,7 +33,11 @@ section {
     align-items: center;
     margin: 0 auto;
     width: 100%;
-    max-width: 1100px;
+}
+.header .section-content {
+    padding: 16px 5%;
+    justify-content: space-between;
+    align-items: center;
 }
 
 .nav-links {
@@ -49,12 +48,13 @@ section {
 /* First-section content */
 .first {
     background: #ff8985;
-    padding: 35px 16px;
+    padding: 25px 0;
 }
 /* Left Side */
 .first-content {
     gap: 48px;
     align-items: center;
+    padding: 50px 5%;
 }
 .first-text {
     display: flex;
@@ -74,7 +74,8 @@ section {
     margin-bottom: 16px;
 }
 .signup-button {
-    max-width: 120px;
+    max-height: 62px;
+    max-width: 90px;
     background-color: #3882F6;
     color: #fff;
     font-weight: bold;
@@ -87,7 +88,10 @@ section {
 /* Right side */
 .first-image{
     display: flex;
+    flex: 1;
     flex-direction: column;
+    justify-content: center;
+    align-items: center;
 }
 .giphy-credit {
     align-self: flex-end;
@@ -100,3 +104,20 @@ section {
     font-weight: bold;
 }
 /* Second section css */
+
+.info {
+    background: #d6ff89;
+    padding: 50px 0;
+}
+.info .section-content {
+    flex-direction: column;
+    align-items: center;
+    max-width: 1100px;
+}
+.cards {
+    display: flex;
+    gap: 32px;
+    justify-content: center;
+    flex-wrap: wrap;
+    width: 100%;
+}
