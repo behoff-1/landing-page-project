@@ -175,3 +175,28 @@ ul {
     margin-top: 16px;
     padding-right: 20px;
 }
+/* Call to action section */
+.cta {
+    padding: 50px 0;
+}
+.cta-content {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #3882F6;
+}
+.cta-text {
+    flex: 1 1 0;
+}
+.cta-header {
+    color: #fff;
+    font-size: 24px;
+    margin-bottom: 4px;
+    font-weight: bold;
+}
+.cta-subtext {
+    font-weight: 300;
+    font-size: 18px;
+    color: #E5E7EB;
+    margin: 0;
+}
